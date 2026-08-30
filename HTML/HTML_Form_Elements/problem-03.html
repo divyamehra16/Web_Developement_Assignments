@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            Online Course Enrollment & Student Registration
+        </title>
+    </head>
+    <body>
+        <br>
+        <h2><center><i>TechPath Learning</i></center></h2>
+        <h1><center>Enroll in a <em>technical course</em> built for your future</center></h1>
+        <hr>
+        <p><center><mark>Join 12,000+ students accelerating their tech careers with structured, mentor-led programs</mark>.</center></p>
+        <hr><hr>
+        <h2>#<i>TechPath Introductory Technical Programs</i></h2>
+        <p>Hands-on, industry-aligned courses in programming, data structures, web development and more. Weekly live sessions, doubt-clearing labs and a peer community.</p>
+        <a href="#" title="technical course link">View Full Course Catalogue</a>
+        <hr> 
+        <form>
+            <b>
+                <h2># Account Information</h2>
+                <h4>~ <i>Your credentials and contact details</i></h4>
+                <label for="fullName">Full Name* : </label>
+                <input type="text" name="fullName" placeholder="enter name" required>
+                <br><br>
+                <label for="email-address">Email Address* : </label>
+                <input type="email" name="email-address" placeholder="enter email" required>
+                <br><br>
+                <label for="password">Password* : </label>
+                <input type="password" name="password" placeholder="enter password" required>
+                <br><br>
+                <label for="mobile_number">Mobile Number* : </label>
+                <input type="tel" name="mobile_number" placeholder="enter mobile number" required pattern="[0-9]{10}">
+                <br><br>
+                <label for="dob">Date Of Birth* : </label>
+                <input type="date" name="dob" placeholder="enter dob" required>
+                <br><br><hr><hr>
+                <h2># Course Selection</h2>
+                <h4>~ <i>Choose the program and batch that fits your schedule.</i></h4>
+                <label for="course">Select course* : </label>
+                <select name="course" required>
+                    <option value="">-----SELECT COURSE-----</option>
+                    <option value="Python Essentials">Python Essentials</option>
+                    <option value="Java Fundamentals">Java Fundamentals</option>
+                    <option value="C++ Programming">C++ Programming</option>
+                </select>
+                <br><br>
+                <label for="timings">Select Batch* : </label>
+                <select name="timings" required>
+                    <option value="">------Select Batch------</option>
+                    <option value="Morning- 9AM to 12PM">Morning- 9AM to 12PM</option>
+                    <option value="Evening- 5PM to 8PM">Evening- 5PM to 8PM</option>
+                </select>
+                <br><br><hr><hr>
+
+                <h2># Learning Goals</h2>
+                <h4>~ <i>Tell us what you want to achieve in this course</i></h4>
+                <label for="goals">Your Learning Goals : </label>
+                <textarea name="goals"></textarea>
+
+                <br><br><hr><hr>
+                <h2># Confirmation & Submission</h2>
+                <h4>~ <i>Review and confirm your enrollment</i></h4>
+                <input type="checkbox" name="Submission" required>
+                <label for="Submission">I confirm that all the information provided above is accurate. I have read and agree to the Terms & Conditions and Privacy Policy of TechPath Learning. I understand that my enrollment is subject to seat availability.</label>
+                <br><br><br>
+                <input type="submit" value="submit form">
+                <input type="reset" value="reset form">
+            </b>
+            <br><hr><hr><br>
+        </form>
+
+
+    </body>
+</html>

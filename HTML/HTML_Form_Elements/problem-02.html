@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Clinic Appointment Booking</title>
+</head>
+
+    <body>
+
+        <header>
+        <h1><center>Clinic Appointment Booking</center></h1>
+        <br><hr>
+        <p>
+            Please fill out the form below to request an appointment.
+            Provide accurate information so our clinic staff can contact
+            you and arrange a suitable appointment.
+        </p>
+        <hr><hr>
+        </header>
+
+    <form>
+        <b>
+            <h2>Patient Information</h2>
+        <hr>
+
+                <label for="patient-name">Full Name : </label>
+                <input type="text" name="patient-name" required placeholder="Enter your full name">
+                <br><br>
+
+                <label for="email">Email Address : </label>
+                <input type="email" name="email" required placeholder="example@email.com">
+                <br><br>
+
+                <label for="mobile">Mobile Number : </label>
+                <input type="tel" name="mobile" required pattern="[0-9]{10}" placeholder="Enter a 10-digit mobile number">
+                <br><br>
+
+                <label for="dob">Date of Birth : </label>
+                <input type="date" name="dob" required>
+                <br><br>
+
+                <label for="patient-id">Patient ID : </label>
+                <input type="text" name="patient_id" pattern="[A-Za-z0-9-]+" placeholder="OPTIONAL" optional>
+
+        <br><br><hr><hr>
+
+        <h2>Appointment Preferences</h2>
+        <hr>
+
+                <label for="appointment-date">Preferred Appointment Date : </label>
+                <input type="date" name="appointment-date" required>
+                <br><br>
+
+                <label for="appointment-time">Preferred Appointment Time : </label>
+                <input type="time" name="appointment-time" required min="09:00" max="18:00">
+                <br><br>
+
+                <label for="doctor">Select Doctor : </label>
+                <select name="doctor" required>
+                    <option value="">-- Select a Doctor --</option>
+                    <option value="dr_aarav_mehta">
+                        Dr. Aarav Mehta - General Physician
+                    </option>
+                    <option value="dr_isha_sharma">
+                        Dr. Isha Sharma - Cardiologist
+                    </option>
+                    <option value="dr_rohan_verma">
+                        Dr. Rohan Verma - Dermatologist
+                    </option>
+                    <option value="dr_ananya_gupta">
+                        Dr. Ananya Gupta - Pediatrician
+                    </option>
+                    <option value="dr_vikram_singh">
+                        Dr. Vikram Singh - Orthopedic Specialist
+                    </option>
+                </select>
+
+        <br><hr><hr>
+        <h2>Visit Details</h2>
+        <hr>
+        <h3>Visit Type:</h3>
+        <input type="radio" name="new-patient" required value="new_patient">
+        <label for="new-patient">New Patient</label>
+        
+        <br>
+        <input type="radio" name="follow-up" required value="follow_up">
+        <label for="follow-up">Follow-up</label>
+        
+        <br>
+        <input type="radio" name="consultation" required value="consultation">
+        <label for="consultation">Consultation</label>
+        
+        <br>
+        <input type="radio" name="emergency" required value="emergency">
+        <label for="emergency">Emergency</label>
+        
+        <br>
+        <hr><hr>
+        
+        <h2>Preferred Communication Method :</h2>
+        <input type="radio" name="communication-email" value="email" required>
+        <label for="communication-email">Email</label>
+        
+        <br>
+        <input type="radio" name="communication-phone" value="phone" required>
+        <label for="communication-phone">Phone Call</label>
+        
+        <br>
+        <input type="radio" name="communication-sms" value="sms" required>
+        <label for="communication-sms">SMS</label>
+        <br><hr><hr>
+
+        <h2>Additional Information</h2>
+        <label for="reason"> Reason for Visit : </label>
+        <textarea name="reason" required minlength="10" maxlength="500" placeholder="Briefly describe your reason for visiting..."></textarea>
+
+        <br><hr>
+        <label for="terms">
+            I accept the appointment terms and understand that
+            submitting this form is an appointment request and
+            not a guarantee of an appointment.
+        </label>
+
+        <input type="checkbox" name="terms" value="accepted" required>
+        <br><br>
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+
+        </b>
+    </form>
+
+        <br><br>
+        <hr>
+
+        <h2>Clinic Timings</h2>
+
+        <table border="1">
+            <caption>Weekly Clinic Schedule</caption>
+
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Time</th>
+                    <th>Closing Time</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>09:00 AM</td>
+                    <td>08:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>09:00 AM</td>
+                    <td>08:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>09:00 AM</td>
+                    <td>08:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>09:00 AM</td>
+                    <td>08:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>09:00 AM</td>
+                    <td>06:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>09:00 AM</td>
+                    <td>04:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td colspan="2">Closed</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><hr>
+        <h3>
+            <strong>Emergency:</strong>If you are experiencing a medical emergency, call
+            <a href="tel:112">112</a> or visit the nearest emergency department.
+        </h3>
+
+    </body>
+</html>

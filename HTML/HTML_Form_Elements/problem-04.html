@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>
+            Employee Leave Request Form
+        </title>
+    </head>
+    <body>
+        <h1><center><i>Employee Leave Request</i></center></h1>
+        <p><center>Complete all required sections. Your request will be routed to your department manager for approval within 1-2 business days.</center></p>
+        <hr><hr>
+        <form>
+            <b>
+
+                <h2># Leave Categories - <i>Reference Guide</i></h2>
+                <hr>
+                <table border="1">
+                    <caption><b>Reference Guide</b></caption>
+                    <thead>
+                        <tr>
+                            <th>  LEAVE TYPE </th>
+                            <th>  MAX DAYS </th>
+                            <th>  ADVANCE NOTICE </th>
+                            <th>  ENCASHABLE </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Casual Leave <br> (CL)</td>
+                            <td>12 Days</td>
+                            <td>1 Day</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Sick Leave <br> (SL)</td>
+                            <td>12 Days</td>
+                            <td>1 Day / Same Day</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Earned Leave <br> (EL)</td>
+                            <td>15 Days</td>
+                            <td>7 Days</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>Work From Home <br> (WFH)</td>
+                            <td>24 Days</td>
+                            <td>1 Day</td>
+                            <td>YES (for 12 days only)</td>
+                        </tr>
+                        <tr>
+                            <td>Others/ Special</td>
+                            <td>As Approved</td>
+                            <td>Varies</td>
+                            <td>NO</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><hr><hr>
+
+                <h2># Employee Details</h2>
+                <hr>
+                <label for="fullName">Full Name* : </label>
+                <input type="text" name="fullName" placeholder=" enter name " required>
+                <br><br>
+                <label for="empID">Employee ID* : </label>
+                <input type="text" name="empID" placeholder="example; EMP-2026" required>
+                <br><br>
+                <label for="email">Work Email* : </label>
+                <input type="email" name="email" placeholder="enter email" required>
+                <br><br>
+                <label for="dep">Department* : </label>
+                <select name="dep" required>
+                    <option value="">------Select------</option>
+                    <option value="Engineering & Technology">Engineering & Technology</option>
+                    <option value="Product Management">Product Management</option>
+                    <option value="Design & Management">Design & Management</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Finance & Account">Finance & Account</option>
+                    <option value="Marketing & Communication">Marketing & Communication</option>
+                </select>
+                <br><br>
+                <label for="remail">Reporting Manager Email* : </label>
+                <input type="email" name="remail" placeholder="enter email" required>
+                <br><br><hr><hr>
+                <h2># Leave Details</h2>
+                <hr>
+                <label for="leave-type"><h3><i>LEAVE TYPE* : </i></h3></label>
+                <input type="radio" name="casual" required>
+                <label for="casual">Casual Leave</label> &nbsp;&nbsp;
+                <input type="radio" name="sick" required>
+                <label for="sick">Sick Leave</label>&nbsp;&nbsp;
+                <input type="radio" name="earned" required>
+                <label for="earned">Earned Leave</label>&nbsp;&nbsp;
+                <input type="radio" name="wfh" required>
+                <label for="wfh">Work From Home Leave</label>&nbsp;&nbsp;
+                <input type="radio" name="other" required>
+                <label for="other">Other Leaves</label>&nbsp;&nbsp;
+                <br><hr><hr>
+                <h2>#<i>Leave Duration*</i></h2>
+                <label for="start"><h3>Start Date</h3></label>
+                <input type="date" name="start" required>
+                <br><br>
+                <label for="end"><h3>End Date</h3></label>
+                <input type="date" name="end" required>
+                <br><br>
+                <hr><hr>
+                <h2># Reason & Supporting Document</h2>
+                <label for="reason">REASON FOR LEAVE* </label><br>
+                <textarea name="reason" required placeholder="Enter Reason for Leave"></textarea>
+                <br><br>
+                <label for="doc">SUPPORTING DOCUMENTS</label>
+                <input type="file" name="doc" required accept=".pdf,.jpg,.jpeg,.png">
+                <br><hr><hr>
+            </b>
+            <h2># Declaration</h2>
+            <hr>
+            <input type="radio" name="declaration" required>
+            <label for="declaration">I, <input type="text" name="emp" required placeholder="enter name"> , hereby declare that the information provided in this leave request is true and accurate to the best of my knowledge. I understand that providing false information may result in disciplinary action as per company policy. I agree to hand over my pending responsibilities to a designated colleague before proceeding on leave.</label>
+            <br><br><hr>
+
+            <center><input type="submit" value="SUBMIT FORM"><br><br>
+            <input type="reset" value="CLEAR FORM"><br></center>
+
+        </form>
+    </body>
+</html>
