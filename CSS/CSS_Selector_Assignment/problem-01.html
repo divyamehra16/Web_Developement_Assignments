@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Listing Portal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Grouping Selector */
+        h1, h2, p {
+            color: #222;
+        }
+        #movie-container {
+            width: 900px;
+            margin: 30px auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .movie-card {
+            background-color: white;
+            border: 2px solid #e63d3d;
+            display: flex;
+            gap: 20px;
+        }
+        .movie-poster {
+            width: 140px;
+            height: 195px;
+            object-fit: cover;
+        }
+        .movie-details {
+            padding-top: 10px;
+        }
+        .movie-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        .release-date {
+            font-size: 15px;
+            margin-bottom: 25px;
+            color: #666;
+        }
+        .book-button {
+            display: inline-block;
+            background-color: #e53935;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border: 1px solid #c62828;
+            border-radius: 5px;
+        }
+        .book-button:hover {
+            background-color: #c62828;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="movie-container">
+
+        <div class="movie-grid">
+
+            <div class="movie-card">
+                <img class="movie-poster"
+                     src="https://imgs.search.brave.com/5v9vryEnS-37udA20XqCwe7RKkQ0lSVaTiL6hRKHWWM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/bW9iaWxlL3RodW1i/bmFpbC94bGFyZ2Uv/ZXQtdGVsdWd1LWV0/MDAzMjMyNzYtMjEt/MDItMjAyMi0wMi0x/MC01Mi5qcGc"
+                     alt="ET 2022 Poster">
+
+                <div class="movie-details">
+                    <h2 class="movie-title">ET 2022</h2>
+                    <p class="release-date">Releasing on 11 Mar, 2022</p>
+                    <a href="#" class="book-button">Book Tickets</a>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img class="movie-poster"
+                     src="https://c8.alamy.com/comp/2HY52XH/jhund-poster-amitabh-bachchan-2022-zee-studios-courtesy-everett-collection-2HY52XH.jpg"
+                     alt="Jhund Poster">
+
+                <div class="movie-details">
+                    <h2 class="movie-title">Jhund</h2>
+                    <p class="release-date">Releasing on 04 Mar, 2022</p>
+                    <a href="#" class="book-button">Book Tickets</a>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img class="movie-poster"
+                     src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2020/01/15/Sanjay-Leela-Bhansali-and-alia-bhatt-s-Gangubai-Kathiawadi-movie-first-look-poster-.jpg?quality=80&zoom=1&ssl=1"
+                     alt="Gangubai Kathiawadi Poster">
+
+                <div class="movie-details">
+                    <h2 class="movie-title">Gangubai Kathiawadi</h2>
+                    <p class="release-date">Releasing on 25 Feb, 2022</p>
+                    <a href="#" class="book-button">Book Tickets</a>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img class="movie-poster"
+                     src="https://tse3.mm.bing.net/th/id/OIP.h4U7_nUkcPnnk1BY3wxYcwHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                     alt="Radhe Shyam Poster">
+
+                <div class="movie-details">
+                    <h2 class="movie-title">Radhe Shyam</h2>
+                    <p class="release-date">Releasing on 11 Mar, 2022</p>
+                    <a href="#" class="book-button">Book Tickets</a>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img class="movie-poster"
+                     src="https://tse4.mm.bing.net/th/id/OIP.fGk4sGIeqSbQwn-RE85o3AHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                     alt="Uncharted Poster">
+
+                <div class="movie-details">
+                    <h2 class="movie-title">Uncharted</h2>
+                    <p class="release-date">Releasing on 18 Feb, 2022</p>
+                    <a href="#" class="book-button">Book Tickets</a>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img class="movie-poster"
+                     src="https://i.pinimg.com/originals/c5/c2/85/c5c285f153eb52e2bbcba5c51b5cd8d3.png"
+                     alt="The Batman Poster">
+
+                <div class="movie-details">
+                    <h2 class="movie-title">The Batman</h2>
+                    <p class="release-date">Releasing on 04 Mar, 2022</p>
+                    <a href="#" class="book-button">Book Tickets</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
